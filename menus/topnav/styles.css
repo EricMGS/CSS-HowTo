@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.topnav {
+  width: 100vw;
+  height: 8vh;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topnav a {
+  display: inline-block;
+  color: white;
+  font-size: 19px;
+  padding: 2vh 10px;
+  height: inherit;
+}
+
+.topnav a:hover {
+  background-color: lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

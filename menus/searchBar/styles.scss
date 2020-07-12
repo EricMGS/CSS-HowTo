@@ -1,0 +1,84 @@
+$primaryColor: dodgerblue;
+$secondaryColor: #f1f1f1;
+
+* {
+    box-sizing: border-box;
+    display: flex;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#searchBar {
+    width: 100vw;
+    height: auto;
+    background-color: $primaryColor;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchBar-links {
+    color: $secondaryColor;
+    cursor: pointer;
+    height: auto;
+    a {
+        align-items: center;
+        padding: 0 15px;
+        height: 10vh;
+        border: 2px solid dodgerblue;
+        border-width: 2px 0;
+        &:hover {
+            background-color: $secondaryColor;
+            color: $primaryColor;
+        }
+    }
+}
+
+#searchBar-searchBox {
+    $height: 6vh;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 0 15px;
+    input {
+        height: $height;
+        border: none;
+        padding: 0 5px;
+    }
+    button {
+        border: none;
+        height: $height;
+        width: $height;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        background-color: $secondaryColor;
+        justify-content: space-around;
+        align-items: center;
+        &::-moz-focus-inner {border: 0;}
+        i {
+            color: $primaryColor;
+        }
+    }
+}
+
+.active {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+}
+
+@media screen and (max-width: 600px) {
+    #searchBar, #searchBar-links, #searchBar-searchBox {
+        flex-direction: column;
+        width: 100vw;
+    }
+    #searchBar-links a, #searchBar-searchBox input, #searchBar-searchBox button{
+        width: 100vw;
+        height: 6vh;
+        justify-content: space-around;
+        text-align: center;
+    }
+}

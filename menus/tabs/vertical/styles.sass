@@ -1,0 +1,32 @@
+$height: 50vh
+
+.tabMenu
+    display: flex
+
+.tabBar
+    width: 20vw
+    height: $height
+    background-color: #e1e1e1
+    display: flex
+    flex-direction: column
+    
+    button
+        width: 20vw
+        background-color: inherit
+        border: none
+        font-size: 20px
+        height: 10vh
+        outline: none
+        transition: 0.3s
+        &:hover
+            background-color: lightgray
+        &::-moz-focus-inner
+            border: 0
+    button.active
+        background-color: dodgerblue
+
+.divContent
+    width: 40vw
+    height: $height
+    border: 1px solid lightgray
+    padding-left: 5vw

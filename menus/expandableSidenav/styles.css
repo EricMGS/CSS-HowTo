@@ -1,0 +1,50 @@
+.sidenav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  top: 0;
+}
+
+.contentbar {
+  height: 100vh;
+  width: 0;
+  background-color: #e1e1e1;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.iconbar {
+  height: 100vh;
+  width: 5vw;
+  background-color: dodgerblue;
+  -webkit-box-shadow: 2px 0 10px black;
+          box-shadow: 2px 0 10px black;
+}
+
+.iconbar button {
+  width: 5vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.iconbar button:focus {
+  outline: none;
+}
+
+.iconbar button::-moz-focus-inner {
+  border: 0;
+}
+
+.iconbar button i {
+  font-size: 3vw;
+}
+
+.contentbarMax {
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  width: 15vw;
+}
+/*# sourceMappingURL=styles.css.map */

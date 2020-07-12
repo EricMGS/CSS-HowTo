@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+$buttons-width: 5vw;
+#sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    $back-color: #333;
+    $hover-color: #f1f1f1;
+
+    height: 100vh;
+    background-color: $back-color;
+    display: flex;
+    justify-content: space-between;
+
+    #sidenav-links {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $hover-color;
+            padding: 25px 0 25px 30px;
+            &:hover {
+                background-color: $hover-color;
+                color: $back-color;
+            }
+        }
+    }
+    #sidenav-buttons {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        width: $buttons-width;
+        button {
+            width: $buttons-width;
+            height: $buttons-width;
+            border: none;
+            background: none;
+            color: $hover-color;
+            cursor: pointer;
+            outline: none;
+            &::-moz-focus-inner {border: 0;}
+            &:hover{
+                background-color: $hover-color;
+                color: $back-color;
+            }
+        }
+    }
+
+    &.closed {
+        width: $buttons-width;
+        justify-content: end;
+        transition: 0.5s;
+        #sidenav-links {
+            display: none;
+        }
+    }
+    &.open {
+        $width: 20vw;
+        width: $width;
+        transition: 0.5s;
+        #sidenav-links {
+            display: flex;
+            width: $width - $buttons-width;
+        }
+    }
+    &.fullscreen {
+        $width: 100vw;
+        width: $width;
+        transition: 0.5s;
+        #sidenav-links {
+            display: flex;
+            width: $width - $buttons-width;
+            a {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    &.opacity {
+        background-color: rgba(0,0,0,0.7);
+    }
+}
+
+#section {
+    width: 100vw - $buttons-width;
+    height: 100%;
+    position: absolute;
+    left: $buttons-width;
+    box-sizing: border-box;
+    padding-left: 10px;
+    transition: 0.5s;
+    &.blur {
+        background-color: rgba(0,0,0,0.5);
+        transition: 0.5s;
+    }
+    &.push {
+        padding-left: 20vw;
+    }
+}

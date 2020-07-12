@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#searchMenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #CCC;
+    h1 {
+        padding-left: 10px;
+    }
+}
+
+#topicos {
+    list-style-type: none;
+    box-sizing: border-box;
+    padding: 0;
+    li {
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        outline: none;
+        &::-moz-focus-inner{border: 0;}
+    }
+}
+
+#searchBox {
+    width: inherit;
+    height: 8vh;
+}

@@ -1,0 +1,50 @@
+$width: 100vw
+
+*
+    box-sizing: border-box
+
+html, body
+    margin: 0
+    padding: 0
+
+.tabHeaders
+    width: $width
+
+.header
+    width: inherit
+    height: 25vh
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: space-around
+    h1, p
+        text-align: center
+
+.tabBar
+    width: inherit
+    height: 8vh
+    background-color: #f1f1f1
+    display: flex
+
+.tab
+    width: $width / 4
+    height: inherit
+    border: none
+    cursor: pointer
+    outline: none
+    &::-moz-focus-inner
+        border: 0
+
+.content
+    display: none
+    width: inherit
+    height: inherit
+
+#London
+    background-color: #f44336
+#Paris
+    background-color: #4CAF50
+#Tokyo
+    background-color: #2196F3
+#Oslo
+    background-color: #ff5722

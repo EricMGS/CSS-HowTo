@@ -1,0 +1,65 @@
+.accordion {
+  list-style-type: none;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 40vw;
+  height: 8vh;
+  background-color: #c1c1c1;
+  cursor: pointer;
+}
+
+.titulo:hover {
+  background-color: gray;
+}
+
+.lista {
+  width: 40vw;
+  max-height: 0;
+  visibility: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e1e1e1;
+  -webkit-transition: max-height 0.2s;
+  transition: max-height 0.2s;
+}
+
+.lista li {
+  list-style-type: none;
+}
+
+.lista li:hover {
+  color: dodgerblue;
+}
+
+.lista a {
+  cursor: pointer;
+}
+
+.listaMax {
+  max-height: 100vh;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+  visibility: visible;
+}
+
+.opened {
+  background-color: dodgerblue;
+}
+
+.opened:hover {
+  background-color: dodgerblue;
+}
+/*# sourceMappingURL=styles.css.map */

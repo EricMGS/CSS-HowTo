@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#searchBar {
+  width: 100vw;
+  height: auto;
+  background-color: dodgerblue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#searchBar-links {
+  color: #f1f1f1;
+  cursor: pointer;
+  height: auto;
+}
+
+#searchBar-links a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  height: 10vh;
+  border: 2px solid dodgerblue;
+  border-width: 2px 0;
+}
+
+#searchBar-links a:hover {
+  background-color: #f1f1f1;
+  color: dodgerblue;
+}
+
+#searchBar-searchBox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  padding: 0 15px;
+}
+
+#searchBar-searchBox input {
+  height: 6vh;
+  border: none;
+  padding: 0 5px;
+}
+
+#searchBar-searchBox button {
+  border: none;
+  height: 6vh;
+  width: 6vh;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f1f1f1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#searchBar-searchBox button::-moz-focus-inner {
+  border: 0;
+}
+
+#searchBar-searchBox button i {
+  color: dodgerblue;
+}
+
+.active {
+  background-color: #f1f1f1;
+  color: dodgerblue;
+}
+
+@media screen and (max-width: 600px) {
+  #searchBar, #searchBar-links, #searchBar-searchBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+  }
+  #searchBar-links a, #searchBar-searchBox input, #searchBar-searchBox button {
+    width: 100vw;
+    height: 6vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

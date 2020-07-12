@@ -1,0 +1,35 @@
+$height: 100vh
+.sidenav
+	$height: 100vh
+	position: fixed
+	display: flex
+	left: 0
+	top: 0
+
+.contentbar
+	height: $height
+	width: 0
+	background-color: #e1e1e1
+	transition: width 1s
+	
+.iconbar
+	height: $height
+	width: 5vw
+	background-color: dodgerblue
+	box-shadow: 2px 0 10px black
+	button
+		width: 5vw
+		background: none
+		border: none
+		cursor: pointer
+		&:focus
+			outline: none
+		&::-moz-focus-inner
+			border: 0;
+		i
+			font-size: 3vw
+
+.contentbarMax
+	transition: width 1s;
+	width: 15vw
+ 

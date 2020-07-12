@@ -1,0 +1,31 @@
+$width: 50vw
+
+.tabBar
+    $height: 8vh
+    width: $width
+    height: $height
+    background-color: #e1e1e1
+    border: 1px solid lightgray
+    display: flex
+    align-items: center
+    button
+        height: $height
+        background-color: inherit
+        border: none
+        cursor: pointer
+        font-size: 22px
+        transition: 0.3s
+        &:hover
+            background-color: lightgray
+    button.active
+        background-color: gray
+
+.divcontent
+    width: $width
+    height: 20vh
+    overflow: hidden
+    border: 1px solid lightgray
+    border-top: none
+
+.invisible
+    display: none

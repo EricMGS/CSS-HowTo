@@ -1,0 +1,110 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#topnav {
+  width: 100vw;
+  height: auto;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#topnav a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #CCC;
+  height: 8vh;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#topnav a:hover {
+  background-color: #CCC;
+  color: #333;
+}
+
+#topnav a:hover i {
+  color: #333;
+}
+
+#topnav a i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+  color: #CCC;
+  padding: 3px;
+}
+
+#topnav a.active {
+  background-color: #4CAF50;
+  color: #CCC;
+}
+
+#topnav a.active i {
+  color: #CCC;
+}
+
+#topnav button {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  color: #CCC;
+  height: 8vh;
+  cursor: pointer;
+  outline: none;
+}
+
+#topnav button:hover {
+  background-color: #CCC;
+  color: #333;
+}
+
+#topnav button::-moz-focus-inner {
+  border: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #topnav a:not(:first-child) {
+    display: none;
+  }
+  #topnav button {
+    display: block;
+  }
+  #topnav.responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #topnav.responsive a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: inherit;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

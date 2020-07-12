@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.tabHeaders {
+  width: 100vw;
+}
+
+.header {
+  width: inherit;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header h1, .header p {
+  text-align: center;
+}
+
+.tabBar {
+  width: inherit;
+  height: 8vh;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab {
+  width: 25vw;
+  height: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.tab::-moz-focus-inner {
+  border: 0;
+}
+
+.content {
+  display: none;
+  width: inherit;
+  height: inherit;
+}
+
+#London {
+  background-color: #f44336;
+}
+
+#Paris {
+  background-color: #4CAF50;
+}
+
+#Tokyo {
+  background-color: #2196F3;
+}
+
+#Oslo {
+  background-color: #ff5722;
+}
+/*# sourceMappingURL=styles.css.map */

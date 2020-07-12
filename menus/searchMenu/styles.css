@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#searchMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: #CCC;
+}
+
+#searchMenu h1 {
+  padding-left: 10px;
+}
+
+#topicos {
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+#topicos li:hover {
+  background-color: #f1f1f1;
+}
+
+#topicos a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  outline: none;
+}
+
+#topicos a::-moz-focus-inner {
+  border: 0;
+}
+
+#searchBox {
+  width: inherit;
+  height: 8vh;
+}
+/*# sourceMappingURL=styles.css.map */

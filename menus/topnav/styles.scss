@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.topnav {
+    width: 100vw;
+    height: 8vh;
+    background-color: #333;
+    display: flex;
+    a {
+        display: inline-block;
+        color: white;
+        font-size: 19px;
+        padding: 2vh 10px;
+        height: inherit;
+        &:hover {
+            background-color: lightgray;
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+    a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+}

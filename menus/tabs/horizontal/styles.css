@@ -1,0 +1,43 @@
+.tabBar {
+  width: 50vw;
+  height: 8vh;
+  background-color: #e1e1e1;
+  border: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabBar button {
+  height: 8vh;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tabBar button:hover {
+  background-color: lightgray;
+}
+
+.tabBar button.active {
+  background-color: gray;
+}
+
+.divcontent {
+  width: 50vw;
+  height: 20vh;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-top: none;
+}
+
+.invisible {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

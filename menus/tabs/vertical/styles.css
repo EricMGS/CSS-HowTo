@@ -1,0 +1,49 @@
+.tabMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabBar {
+  width: 20vw;
+  height: 50vh;
+  background-color: #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tabBar button {
+  width: 20vw;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  height: 10vh;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tabBar button:hover {
+  background-color: lightgray;
+}
+
+.tabBar button::-moz-focus-inner {
+  border: 0;
+}
+
+.tabBar button.active {
+  background-color: dodgerblue;
+}
+
+.divContent {
+  width: 40vw;
+  height: 50vh;
+  border: 1px solid lightgray;
+  padding-left: 5vw;
+}
+/*# sourceMappingURL=styles.css.map */

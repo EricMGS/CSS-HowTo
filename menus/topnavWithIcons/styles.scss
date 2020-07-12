@@ -1,0 +1,78 @@
+$primary: #333;
+$secondary: #CCC;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#topnav {
+    width: 100vw;
+    height: auto;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    a {
+        display: inline-flex;
+        align-items: center;
+        color: $secondary;
+        height: 8vh;
+        padding: 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: $secondary;
+            color: $primary;
+            i{color: $primary;}
+        }
+        i {
+            display: flex;
+            align-items: center;
+            height: inherit;
+            color: $secondary;
+            padding: 3px;
+        }
+    }
+    a.active {
+        background-color: #4CAF50;
+        color: $secondary;
+        i{color: $secondary;}
+    }
+    button {
+        display: none;
+        position: absolute;
+        right: 0;
+        background: none;
+        border: none;
+        color: $secondary;
+        height: 8vh;
+        cursor: pointer;
+        outline: none;
+        &:hover {
+            background-color: $secondary;
+            color: $primary;
+        }
+        &::-moz-focus-inner {border: 0;}
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #topnav {
+        a:not(:first-child) {
+            display: none;
+        }
+        button {
+            display: block;
+        }
+    }
+    #topnav.responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        a {
+            display: flex;
+            width: inherit;
+        }
+    }
+}
